@@ -26,7 +26,7 @@ SUBJECT_MAP = {
 
 # Recognition threshold settings (LBPH distance cutoff)
 # Lower distance means better match. Distance > MAX_DISTANCE_THRESHOLD is unrecognized.
-MAX_DISTANCE_THRESHOLD = 55.0  # Above 70 distance -> Unrecognized user
+MAX_DISTANCE_THRESHOLD = 50.0  # Above 70 distance -> Unrecognized user
 
 
 def ensure_directory(path):
