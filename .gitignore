@@ -1,0 +1,10 @@
+# Entorno virtual
+env/
+
+# Base de datos de rostros y modelo entrenado (se generan localmente)
+dataset/
+trainer.yml
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
