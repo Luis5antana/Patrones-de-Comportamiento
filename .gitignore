@@ -8,3 +8,6 @@ trainer.yml
 # Archivos temporales de Python
 __pycache__/
 *.pyc
+
+# Archivos de evidencias
+evidencias/
