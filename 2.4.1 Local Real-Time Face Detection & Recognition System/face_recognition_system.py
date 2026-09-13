@@ -12,7 +12,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # Define las rutas relativas pero asegurando que pertenezcan a esta carpeta
 DATASET_DIR = os.path.join(BASE_DIR, "dataset")
 TRAINER_FILE = os.path.join(BASE_DIR, "trainer.yml")
-CASCADE_PATH = os.path.join(cv2.data.haarcascades, "haarcascade_frontalface_default.xml")
+CASCADE_PATH = os.path.join(BASE_DIR, "haarcascade_frontalface_default.xml")
 
 
 # Map integer IDs to the registered family members (3 relatives required).
@@ -26,7 +26,7 @@ SUBJECT_MAP = {
 
 # Recognition threshold settings (LBPH distance cutoff)
 # Lower distance means better match. Distance > MAX_DISTANCE_THRESHOLD is unrecognized.
-MAX_DISTANCE_THRESHOLD = 70.0  # Above 70 distance -> Unrecognized user
+MAX_DISTANCE_THRESHOLD = 55.0  # Above 70 distance -> Unrecognized user
 
 
 def ensure_directory(path):
